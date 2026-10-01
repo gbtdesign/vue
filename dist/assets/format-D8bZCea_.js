@@ -1,0 +1,1 @@
+function e(e,t=`YYYY-MM-DD HH:mm:ss`){let n=new Date(e),r={YYYY:n.getFullYear(),MM:n.getMonth()+1,DD:n.getDate(),HH:n.getHours(),mm:n.getMinutes(),ss:n.getSeconds()};return t.replace(/YYYY|MM|DD|HH|mm|ss/g,e=>String(r[e]).padStart(2,`0`))}function t(e){return`¥${e.toFixed(2)}`}export{t as n,e as t};
